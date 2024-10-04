@@ -1,7 +1,7 @@
 # Exit on any error. 
 set -e
 
-env
+env | grep PYTHON
 
 # Run the tests
 python -m unitest discover -s tests -v
