@@ -1,5 +1,8 @@
 pipeline {
       agent any 
+      environment {
+        PYTHONPATH=/home/simulations/public_sim_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/home/simulations/public_sim_ws/src/all/ros_basics_examples/python_course_class:/home/simulations/public_sim_ws/src/ros_basics_examples/python_course_class:/home/simulations/public_sim_ws/src/all/kinematics_course_utils/kinematics
+      }
       stages {
           stage('Run tests') {
               steps {
