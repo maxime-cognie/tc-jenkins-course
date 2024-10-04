@@ -1,6 +1,8 @@
 # Exit on any error. 
 set -e
 
+env
+
 # Run the tests
 python -m unitest discover -s tests -v
 
