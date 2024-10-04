@@ -1,10 +1,8 @@
 # Exit on any error. 
 set -e
 
-env | grep PATH
-
 # Run the tests
-python3 -m unitest discover -s tests -v
+python -m unittest discover -s tests -v
 
 # Print the current working directory and list its contents
 pwd
